@@ -1,6 +1,7 @@
 package org.tinger.core.data.metadata;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.SneakyThrows;
 
 import java.lang.reflect.Field;
@@ -8,7 +9,8 @@ import java.lang.reflect.Field;
 /**
  * Created by tinger on 2022-10-18
  */
-@Data
+@Getter
+@Setter
 public abstract class Property {
     private String name;
     private String column;

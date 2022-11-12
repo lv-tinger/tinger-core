@@ -1,13 +1,15 @@
 package org.tinger.core.data.metadata;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.List;
 
 /**
  * Created by tinger on 2022-11-13
  */
-@Data
+@Getter
+@Setter
 public class JdbcMetadata<T, K> extends Metadata<T, K> {
     private List<JdbcProperty> properties;
 
