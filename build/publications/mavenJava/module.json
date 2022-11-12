@@ -1,0 +1,69 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.tinger",
+    "module": "tinger-core",
+    "version": "1.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.4"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "tinger-core-1.0-SNAPSHOT.jar",
+          "url": "tinger-core-1.0-SNAPSHOT.jar",
+          "size": 21728,
+          "sha512": "d42d7d9c3c6f5fcd39de31a17a54bf48b6a6ee991c49c44fc7fcf1780faa0d6459cac14e183db3348b12aaa1f9bd555fa8266aeef626e510ea59e78ecec2b312",
+          "sha256": "29eb1da7e094b3cf06329d9f31ef576319b0a44ef105110dbae2968a19b4eeaa",
+          "sha1": "f57ae69a1ed3c983ed4b95ef14ff818e5f7bdbf8",
+          "md5": "0e9385d59e1f68c727331f4d1c80deec"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.projectlombok",
+          "module": "lombok",
+          "version": {
+            "requires": "1.18.24"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "tinger-core-1.0-SNAPSHOT.jar",
+          "url": "tinger-core-1.0-SNAPSHOT.jar",
+          "size": 21728,
+          "sha512": "d42d7d9c3c6f5fcd39de31a17a54bf48b6a6ee991c49c44fc7fcf1780faa0d6459cac14e183db3348b12aaa1f9bd555fa8266aeef626e510ea59e78ecec2b312",
+          "sha256": "29eb1da7e094b3cf06329d9f31ef576319b0a44ef105110dbae2968a19b4eeaa",
+          "sha1": "f57ae69a1ed3c983ed4b95ef14ff818e5f7bdbf8",
+          "md5": "0e9385d59e1f68c727331f4d1c80deec"
+        }
+      ]
+    }
+  ]
+}
