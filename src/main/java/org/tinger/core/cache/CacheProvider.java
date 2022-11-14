@@ -14,7 +14,7 @@ public interface CacheProvider {
 
     boolean nx(String key);
 
-    <T> T get(String key);
+    Object get(String key);
 
     void put(String key, Object value);
 
