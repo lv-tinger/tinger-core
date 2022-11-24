@@ -39,4 +39,14 @@ public enum ENV {
 
         return this.value <= env.value;
     }
+
+    public static ENV of(String name) {
+        for (ENV env : ENV.values()) {
+            if (Objects.equals(name, env.name())) {
+                return env;
+            }
+        }
+
+        return null;
+    }
 }

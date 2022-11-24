@@ -6,5 +6,5 @@ package org.tinger.core.embed;
 public interface Controller {
     String path();
 
-    Object execute(Request request, Response response);
+    Object execute(Request embedRequest, Response response);
 }

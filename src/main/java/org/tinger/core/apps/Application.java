@@ -1,8 +1,13 @@
 package org.tinger.core.apps;
 
 import org.tinger.core.listen.Listener;
+import org.tinger.core.system.ENV;
 
 public abstract class Application {
+    public abstract String name();
+
+    public abstract ENV env();
+
     public abstract void init();
 
     public abstract void start();
@@ -13,7 +18,7 @@ public abstract class Application {
 
     public abstract void produce(String channel, Object object);
 
-    public abstract <T extends Module> T module(Class<T> type);
+    public abstract <T extends Module<?>> T module(Class<T> type);
 
     private static Application instance;
 
