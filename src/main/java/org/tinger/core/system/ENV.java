@@ -3,7 +3,7 @@ package org.tinger.core.system;
 import java.util.Objects;
 
 public enum ENV {
-    DEV(0), TST(1), STG(2), PRO(3);
+    DEV(0), TEST(1), STAG(2), PROD(3);
 
     public final int value;
 
