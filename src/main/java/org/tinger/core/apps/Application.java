@@ -1,12 +1,9 @@
 package org.tinger.core.apps;
 
 import org.tinger.core.listen.Listener;
-import org.tinger.core.system.ENV;
 
 public abstract class Application {
     public abstract String name();
-
-    public abstract ENV env();
 
     public abstract void init();
 

@@ -49,4 +49,9 @@ public enum ENV {
 
         return null;
     }
+
+    public static ENV current() {
+        String env = System.getenv().get("tinger-env");
+        return env == null ? ENV.DEV : ENV.of(env);
+    }
 }
